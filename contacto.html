@@ -1,0 +1,57 @@
+<script type="text/javascript" src="js/main.js"></script>
+
+<!-- Aquí comienza el contenido específico de cada HTML-->
+
+    <section class="contenido-contacto">
+        
+        <!--La clase .caja-contacto1 es la columna izquierda-->
+        <div class="caja-contacto1"> 
+            <h2>Direccion</h2>
+                <p>San Martin 150, Tandil, Buenos Aires, Argentina.</p>
+            <h2>Telefono</h2>
+                <p>(+549) 11552324</p>
+            <h2>Email</h2>
+                <p>mitech@gmail.com</p>
+            <h2>Horario de atencion</h2>
+                <p>Lunes a Viernes: 9:00 a 18:00 hs</p>
+            <a href="https://goo.gl/maps/9t2PfcFTge25gRG97" target="_blank"><img class="mapa-ubicacion" src="../images/mapa.jpg" alt="mapa-ubicacion"></a>
+        </div>
+    
+        <!--La clase .caja-formulario2 es la columna derecha-->
+        <div class="caja-contacto2">
+            <form  id="cuadro-form" name="log-form">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <p>Nombre: <input type="text" name="nombre" required> </p>
+                    <p>Apellido: <input type="text" name="apellido" required> </p>
+                    <p>Email: <input type="email" name="email" required> </p>
+                    <p>Telefono: <input type="tel" name="telefono" > </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Necesito información sobre</legend>
+                    <select name="servicios" id="SelectServicios" size="7" multiple>
+                        <option value="consultoria-tecnologica">Consultoría Tecnológica</option>
+                        <option value="software-a-medida">Software a medida</option>
+                        <option value="aplicaciones-moviles">Aplicaciones móviles</option>
+                        <option value="diseno-web">Diseño Web</option>
+                        <option value="diseno-corporativo">Diseño corporativo</option>
+                        <option value="posicionamiento-seo">Posicionamieto SEO</option>
+                        <option value="otras-consultas">Otras consultas</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend> Deje aquí su mensaje</legend>
+                    <textarea name="texto" id="" cols="30" rows="5" ></textarea>
+                    <div class="captcha">
+                        <div id="captchaValue">ValorCaptcha</div>
+                        <input id="inputCaptcha" type="text" name="" placeholder="Ingrese el Captcha" required>
+                    </div>
+                    <button type="button" id="captchabutton">Verificar Captcha</button>
+                    <p id="resultado-captcha"></p>
+                </fieldset>
+                <input id="submit-button" type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </form>
+        </div>
+    </section>
+    <!--Termina el contenido específico del html y comienza el footer-->

@@ -1,0 +1,78 @@
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/nuevaTabla.js"></script>
+
+<!-- Aquí comienza el contenido específico de cada HTML-->
+    
+    <section class="introduccion-clientes">
+
+        <h1>Nuestros Clientes</h1>
+        <p>En M&Itech estamos orgullosos de todos nuestros trabajos realizados y siempre nos destacaremos por nuestra transparencia. Por dicha razón, le proponemos a los clientes que hayan quedado satisfechos con nosotros, que carguen ellos mismos sus referencias y le cuenten al resto de los visitantes cómo fue su experiencia. A continuación les dejaremos campos vacíos para que puedan completar con sus datos y así ponerse a disposición de quién lo requiera.</p>
+    </section>
+
+<!-------------------------------- TABLA TPE 2 ----------------------------------------------
+    <section class="formulario-json"> 
+        <input id="nombreCliente" placeholder="Nombre del Cliente" type="text">
+        <input id="direccionCliente" placeholder="Ciudad y Direccion" type="text">
+        <input id="contactoCliente" placeholder="Teléfono o email de Contacto" type="text">
+        <input id="descripcionCliente" placeholder="Descripción del Servicio Adquirido" type="text">
+        <button id="btn-agregar" type="button">Agregar</button>
+        <button id="btn-borrar" type="button">Borrar</button>
+        <button id="btn-borrarTabla" type="button">Limpiar tabla</button>
+        <table>
+        <div>
+                <th>Inserte el nombre de la empresa</th>
+                <th>Inserte la dirección y ciudad</th>
+                <th>Inserte el numero / mail de contacto</th>
+                <th>Inserte el servicio adquirido</th>
+        </div>
+            <div id="tabla"></div>
+        </table>
+        <div class="logotipos-clientes">
+            <img src="images/elcid.png" alt="elcidlogo">
+            <img src="images/sanchez.png" alt="sanchezlogo">
+            <img src="images/perez.png" alt="perezlogo">
+            <img src="images/mirador.png" alt="miradorlogo">
+          </div>
+    </section>
+------------------------------------------------------------------------------------------->
+<!----------------------------------- TABLA TPE 3------------------------------------------>
+
+    <section class= "tablaAPI">
+        
+        <div class="inputsClientes">
+            <input id="nombreCliente" placeholder="Nombre del Cliente" type="text">
+            <input id="emailCliente" placeholder="Email de Contacto" type="text">
+            <input id="direccionCliente" placeholder="Direccion" type="text">
+            <input id="telefonoCliente" placeholder="Teléfono" type="text">
+            <button id="agregar1" type="button">Agregar 1</button>
+            <button id="agregar3" type="button">Agregar 3</button>
+            <!--<button id="btn-borrarTabla" type="button">Limpiar tabla</button>-->
+            <p id="msg"></p>
+        </div>
+
+        <div class="filtro">
+            <label for="">Filtrar: </label><input type="text" placeholder="" id="busqueda">
+                <button id="buscar" class="fas fa-search">Buscar</button>
+                <button id="volver" class="fas fa-undo-alt">Volver</button>
+        </div>
+
+        <div class="contenedorTabla">
+            <table class="tablaClientes" id="tablaClientes">
+                <thead class="tr">
+                    <th id="thId"> ID </th> 
+                    <th> Nombre </th>
+                    <th> Email </th>
+                    <th> Dirección </th>
+                    <th> Teléfono </th>
+                    <th> Borrar Fila </th>
+                    <th> Editar Fila </th>
+                </thead>
+                <tbody id="bodyTabla">
+                <!---------CONTENIDO DE LA TABLA----------->
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+    <!--Termina el contenido específico del html y comienza el footer-->
